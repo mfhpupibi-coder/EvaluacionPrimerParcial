@@ -1,3 +1,18 @@
+/// <summary>
+/// Clase abstracta base que representa una entidad de Persona dentro del sistema institucional.
+/// Demuestra el principio de Abstracción y Encapsulamiento estricto.
+/// </summary>
+public abstract class Persona
+{
+    // ... (aquí va tu código de atributos y propiedades) ...
+
+    /// <summary>
+    /// Método abstracto polimórfico encargado de calcular la remuneración mensual.
+    /// Cada clase hija debe implementar su propia lógica de negocio.
+    /// </summary>
+    /// <returns>Monto total en formato double que representa el pago mensual.</returns>
+    public abstract double CalcularPagoMensual();
+}
 using System;
 
 namespace ExamenParcial
