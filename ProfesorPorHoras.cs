@@ -1,3 +1,20 @@
+/// <summary>
+/// Clase especializada que representa a un docente contratado bajo el esquema de honorarios.
+/// Demuestra el pilar de Herencia al extender el comportamiento de la clase Persona.
+/// </summary>
+public class ProfesorPorHoras : Persona
+{
+    // ... (atributos) ...
+
+    /// <summary>
+    /// Sobreescritura polimórfica que calcula el sueldo multiplicando las horas por la tarifa.
+    /// </summary>
+    /// <returns>Resultado de la operación matemática de nómina.</returns>
+    public override double CalcularPagoMensual()
+    {
+        return _horasTrabajadas * _tarifaPorHora;
+    }
+}
 using System;
 
 namespace ExamenParcial
